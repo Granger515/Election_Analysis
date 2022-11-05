@@ -103,18 +103,18 @@ with open(file_to_load) as election_data:
                 winning_candidate = candidate_name
 
 
-    #Prints winning candidate with summary
-    winning_candidate_summary = (
+        #Prints winning candidate with summary
+        winning_candidate_summary = (
         f"-------------------------\n"
         f"Winner: {winning_candidate}\n"
         f"Winning Vote Count: {winning_count:,}\n"
         f"Winning Percentage: {winning_percentage:.1f}%\n"
         f"-------------------------\n")
 
-    print(winning_candidate_summary)
+        print(winning_candidate_summary)
 
-    # Save the winning candidate's name to the text file.
-    txt_file.write(winning_candidate_summary)
+        # Save the winning candidate's name to the text file.
+        txt_file.write(winning_candidate_summary)
 
 
 #######################################################################
