@@ -57,7 +57,20 @@ The county level analysis of the votes cast shows that:
  
 ##Proposal of Alternative use of Scripts
 
-The most obvious use of this script in future elections would be in alternative statewide elections such as disticts for the House of Representatives, Senate, Governor races. This would require no modification of the script other than changes to the read and write files script. This could either be done manually on a case-by-case or the use of inputs to collect values used for the file location, the input file, and the text file to write the results to. These values could be stored in variables and the variables used to direct the analysis to the proper data input and output.
+###Example One
 
-Another use of the script would be in tracking voter registrant participation. This would require more extensive modifications to the script and more data for analyses. The extra data would be included in CSV file listing each county and the number of registered voters. This could be added into the analyses and a percentage of total voters that participated out of registered voters could be calculated. Over time this could suggest counties where more in-person voting facilities were needed. 
+The most obvious use of this script in future elections would be in alternative statewide elections such as disticts for the House of Representatives, Senate, Governor races. This would require no modification of the script other than changes to the read and write files script. This could either be done manually on a case-by-case or the use of inputs to collect values used for the file location, the input file, and the text file to write the results to. These values could be stored in variables and the variables used to direct the analysis to the proper data input and output by inserting them into pathing code. For example one might use something similar to the following code to both identify and load the appropriate data.
 
+        DirectoryElection1 = str(input("In which file is the data for the governor's race stored? "))
+        DataElection1 = str(input("What is the name of the file that holds the governor's race data "))
+        file_to_load = os.path.join(DirectoryElection1, DataElection1)
+ 
+ While data structure would have to be standardized it a knowleddgable analyst could use this to quickly access and disseminate results
+ 
+###Example Two
+
+Another use of the script would be in tracking voter registrant participation. This would require more extensive modifications to the script and more data for analyses. The extra data would be included in CSV file listing each county and the number of registered voters. This could be added into the analyses and a percentage of total voters that participated out of registered voters could be calculated. Over time this could suggest counties where more in-person voting facilities were needed. The following could be inserted into a for loop to report out voter registration participations by level, assuming the data for registered voters by county had been retrieved previously:
+
+        voterparticipation_percentage = float(votescounty) / float(registeredvoters_county) * 100
+        countyparticipation_results = (f"{county_name}: {voterparticipation_percentage:.1f}%\n")
+        print (countyparticipation_results)
