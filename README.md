@@ -28,7 +28,36 @@ The candidate results were:
   -Raymon Anthony Doane received 3.1% of the vote and 11,606 votes.
 The winner of the election was:
   -Diana DeGette who received 73.8% of the vote and 272,892 votes.
+  
 ## Challenge Overview
+Using the same data as provided earlier provide a breakdown county data as follows:
+
+1. Identify the counties in the election.
+2. Calculate the number of votes cast in each county.
+3. Calculate the percentage of total votes cast in each county.
+4. Calculate the county with the largest number of votes cast.
 
 ## Challenge Summary
+
+The county level analysis of the votes cast shows that:
+-The counties were:
+  -Jefferson
+  -Denver
+  -Arapahoe
+-The number of votes cast in each county were as follows:
+  -Jefferson 38,855
+  -Denver 306,055
+  -Arapahoe 24,801
+-The percentage of total votes in this election broken down by county were as follows:
+  -Jefferson 10.5%
+  -Denver 82.8%
+  -Arapahoe 6.7%
+ -The county with the largest number of voters to turn out was:
+  -Denver
+ 
+##Proposal of Alternative use of Scripts
+
+The most obvious use of this script in future elections would be in alternative statewide elections such as disticts for the House of Representatives, Senate, Governor races. This would require no modification of the script other than changes to the read and write files script. This could either be done manually on a case-by-case or the use of inputs to collect values used for the file location, the input file, and the text file to write the results to. These values could be stored in variables and the variables used to direct the analysis to the proper data input and output.
+
+Another use of the script would be in tracking voter registrant participation. This would require more extensive modifications to the script and more data for analyses. The extra data would be included in CSV file listing each county and the number of registered voters. This could be added into the analyses and a percentage of total voters that participated out of registered voters could be calculated. Over time this could suggest counties where more in-person voting facilities were needed. 
 
