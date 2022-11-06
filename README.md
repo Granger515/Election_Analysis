@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-A colorado Board of Elections employee has given me the following tasks to complete in the election audit of a recent local congressional election.
+A Colorado Board of Elections employee has given me the following tasks to complete in the election audit of a recent local congressional election.
 
 1. Calculate the total number of votes cast.
 2 Get a complete list of candidates who received votes.
@@ -59,13 +59,13 @@ The county level analysis of the votes cast shows that:
 
 ###Example One
 
-The most obvious use of this script in future elections would be in alternative statewide elections such as disticts for the House of Representatives, Senate, Governor races. This would require no modification of the script other than changes to the read and write files script. This could either be done manually on a case-by-case or the use of inputs to collect values used for the file location, the input file, and the text file to write the results to. These values could be stored in variables and the variables used to direct the analysis to the proper data input and output by inserting them into pathing code. For example one might use something similar to the following code to both identify and load the appropriate data.
+The most obvious use of this script in future elections would be in alternative statewide elections such as districts for the House of Representatives, Senate, Governor races. This would require no modification of the script other than changes to the read and write files script. This could either be done manually on a case-by-case or the use of inputs to collect values used for the file location, the input file, and the text file to write the results to. These values could be stored in variables and the variables used to direct the analysis to the proper data input and output by inserting them into pathing code. For example one might use something similar to the following code to both identify and load the appropriate data.
 
         DirectoryElection1 = str(input("In which file is the data for the governor's race stored? "))
         DataElection1 = str(input("What is the name of the file that holds the governor's race data "))
         file_to_load = os.path.join(DirectoryElection1, DataElection1)
  
- While data structure would have to be standardized it a knowleddgable analyst could use this to quickly access and disseminate results
+ While data structure would have to be standardized it a knowledgeable analyst could use this to quickly access and disseminate results
  
 ###Example Two
 
