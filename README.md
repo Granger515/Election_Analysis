@@ -65,7 +65,7 @@ The most obvious use of this script in future elections would be in alternative 
         DataElection1 = str(input("What is the name of the file that holds the governor's race data "))
         file_to_load = os.path.join(DirectoryElection1, DataElection1".csv")
  
- While data structure would have to be standardized it a knowledgeable analyst could use this to quickly access and disseminate results
+ While data structure would have to be standardized a knowledgeable analyst could use this to quickly access and disseminate results
  
 ###Example Two
 
